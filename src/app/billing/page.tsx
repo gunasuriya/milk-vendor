@@ -36,7 +36,7 @@ export default function BillingPage() {
     }
 
     // B. Create a report for ALL buyers
-    const reportData = allBuyers.map(buyer => {
+    const reportData: BillingItem[] = allBuyers.map(buyer => {
       const totalLiters = buyerTotals[buyer.id] ? buyerTotals[buyer.id].totalLiters : 0;
       const totalAmount = totalLiters * PRICE_PER_LITER;
       const paymentId = `${buyer.id}_${billingMonth}`;
