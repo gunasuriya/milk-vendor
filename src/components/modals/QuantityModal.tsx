@@ -107,7 +107,7 @@ export default function QuantityModal({ buyer, entryDate, onClose }: Props) {
                 disabled={isSubmitting}
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-lg text-lg shadow-lg transition-transform duration-100 active:scale-95 disabled:bg-gray-400"
               >
-                {isSubmitting ? "Saving..." : "Submit Entry"}
+                {isSubmitting ? "Saving..." : "Submit"}
               </button>
               <button
                 onClick={onClose}

@@ -35,7 +35,7 @@ export default function ReportsPage() {
             id="report-date"
             value={reportDate}
             onChange={(e) => setReportDate(e.target.value)}
-            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900 font-medium"
           />
         </div>
       </section>

@@ -60,7 +60,7 @@ export default function DailyEntryPage() {
               id="entry-date"
               value={entryDate}
               onChange={(e) => setEntryDate(e.target.value)}
-              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900 font-medium"
             />
           </div>
         </section>
@@ -70,13 +70,13 @@ export default function DailyEntryPage() {
           <div className="flex justify-between items-center mb-2">
             <h2 className="text-xl font-semibold text-gray-800">
               {/* Change title based on selection */}
-              {selectedSeries ? `2. Choose Flat (Series ${selectedSeries})` : "2. Choose Series"}
+              {selectedSeries ? `2. Choose Flat` : "2. Choose Series"}
             </h2>
             <button
               onClick={() => setIsLogModalOpen(true)}
               className="bg-gray-200 text-gray-800 hover:bg-gray-300 text-sm font-medium py-2 px-4 rounded-lg"
             >
-              Show Today's Log
+              View Log
             </button>
           </div>
 
@@ -93,7 +93,7 @@ export default function DailyEntryPage() {
                 <button
                   key={series}
                   onClick={() => setSelectedSeries(series)}
-                  className="p-6 bg-blue-600 text-white rounded-lg text-center font-bold text-2xl shadow-lg hover:bg-blue-700 active:scale-95 transition-all"
+                  className="p-4 bg-blue-600 text-white rounded-lg text-center font-bold text-xl shadow-lg hover:bg-blue-700 active:scale-95 transition-all"
                 >
                   {series}
                 </button>

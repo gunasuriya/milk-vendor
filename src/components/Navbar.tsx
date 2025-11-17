@@ -7,9 +7,9 @@ import { useAppContext } from "@/context/AppContext";
 import { LogOut } from "lucide-react";
 
 const navLinks = [
-  { name: "Daily Entry", href: "/" },
+  { name: "Entry", href: "/" }, // Renamed from "Daily Entry"
   { name: "Buyers", href: "/buyers" },
-  { name: "Reports", href: "/reports" },
+  { name: "Logs", href: "/reports" }, // Renamed from "Reports"
   { name: "Billing", href: "/billing" },
 ];
 
