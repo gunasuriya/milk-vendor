@@ -7,7 +7,14 @@ import DailyLogModal from "@/components/modals/DailyLogModal";
 import { ArrowLeft } from "lucide-react";
 
 // Helper to get today's date in 'YYYY-MM-DD' format
-const getTodayDate = () => new Date().toISOString().split('T')[0];
+const getLocalDateString = (date: Date) => {
+  const year = date.getFullYear();
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+const getTodayDate = () => getLocalDateString(new Date()); // FIX: Use local date
 
 export default function DailyEntryPage() {
   const { allBuyers } = useAppContext();
