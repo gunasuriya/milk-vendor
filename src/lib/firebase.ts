@@ -23,7 +23,7 @@ const db = getFirestore(app);
 // Enable debug logging for Firestore (optional, but helpful)
 // Note: This check ensures it only runs in the browser
 if (typeof window !== 'undefined') {
-  setLogLevel('Debug');
+  setLogLevel('debug');
 }
 
 // This is the special ID for your app's shared data
