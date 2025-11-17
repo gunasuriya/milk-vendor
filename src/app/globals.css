@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+body {
+  @apply bg-gray-100;
+}
+
+/* NEW: Added component styles from the original HTML file.
+  This will fix the grid and button styling.
+*/
+@layer components {
+  .buyer-grid {
+    @apply grid grid-cols-4 gap-3; /* 4 flats per row as requested */
+  }
+  .buyer-btn {
+    @apply p-3 bg-blue-50 border border-blue-200 rounded-lg text-center font-semibold text-blue-800 shadow-sm hover:bg-blue-100 active:scale-95 transition-all truncate; /* Added truncate for long names */
+  }
+}
